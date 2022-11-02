@@ -1,9 +1,7 @@
 import base64
 import binascii
 
-print("Welcome to the Cookie Debugger!")
-choice = input("Please enter the cookie type you want to analyze (JWT, base64_check")
-
+print("Welcome to the JSON Web Token Analyzer!")
 
 def JWT():
     JWT = input("Enter your JSON Web Token here: ") + "."
@@ -22,6 +20,5 @@ def JWT():
     print("Header: \n" + str(header))
     print("Payload: \n" + str(payload))
     print("Signature: \n" + str(signature))
-
-if choice == "JWT":
-    JWT()
+    
+JWT()
